@@ -1,0 +1,60 @@
+.scouting {
+    margin-top: $pad;
+    margin-bottom: $pad;
+    padding-bottom: $pad / 2;
+    
+
+    @media screen and (min-width: 1100px) {
+        width: 75%;
+        margin: $pad * 2 auto;   
+    }
+
+    &__title {
+        @include text-top;
+        margin-left: $pad / 2;
+        margin-right: $pad / 2;
+
+        @media screen and (min-width: 1100px) {
+            margin: $pad;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: $pad / 2;
+
+        @media screen and (min-width: 640px) {
+            display: block;
+            width: 640px;
+            margin: 0 auto;
+            margin-bottom: $pad / 2;
+        }
+
+        @media screen and (min-width: 1100px) {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        @include text-middle;
+        margin-left: $pad / 2;
+        margin-right: $pad / 2;
+
+        @media screen and (min-width: 1100px) {
+            text-align: left;
+            padding-left: $pad;  
+        }
+    }
+
+    &__list {
+        @include reset-list;
+        text-align: center;
+    }
+
+    &--background {
+        background-image: url(../images/svg/vzorek.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+}

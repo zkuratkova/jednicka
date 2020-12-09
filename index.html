@@ -1,0 +1,72 @@
+---
+layout: layouts/sablona.njk
+menu: uvod
+nahoru: "/"
+---
+<!--banner-->
+<section class="banner">
+    <p class="banner__title">Jednička</p>
+</section>
+
+<!--úvodní sekce-->
+<section class="intro">
+        <div class="grid--third">
+            <div class="column">
+                <div class="inner--900px">
+                    <h2 class="intro__title">Kdo jsme?</h2>
+                    <p class="intro__text intro__text--flower-1">
+                        Jednička je skautský oddíl pro všechny slečny a dámy, které chtějí zažít trochu dobrodružství a nebojí se občas ušpinit. 
+                    </p>
+                    <p class="intro__text intro__text--flower-4">
+                        Každý týden se scházíme na schůzkách, každý měsíc pořádáme výpravy. V létě o prázdninách společně jezdíme na stanový tábor.
+                    </p>
+                    <p class="intro__text intro__text--flower-2">
+                        Náš oddíl je rozšířen o duchovní výchovu. Na táboře a výpravách bývá možnost účastnit se mše svaté, do programu zařazujeme činnosti pro rozvoj duchovních hodnot. Do našeho oddílu chodí věřící i nevěřící děti.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column--news">
+                <div class="inner--900px">
+
+                    <h2 class="news__title">Aktuality</h2>
+
+                        {% for aktualita in collections.aktuality | reverse %}
+
+                        {% if loop.index <= 3 %}
+
+                    <p class="news__text">{{ aktualita.templateContent | safe }}</p>
+
+                        {% endif %}
+
+                        {% endfor %}
+                </div>
+            </div>
+        </div>
+</section>
+
+<!--sekce zakladni-informace-->
+<section class="basic-info">
+    <div class="inner">   
+        <div class="meetings">
+            <div class="container--900px"> 
+                <div class="column--half">
+                    <h3 class="meetings__title">Schůzky</h3>
+                    <p class="meetings__text">
+                        Krťata: čtvrtek 15:00 - 17:00 <br>
+                        Veverky: pondělí 16:00 - 18:00   <br>
+                        Borůvky: úterý 17:00 - 19:00 <br>
+                        Ostružiny: pondělí 15:30 - 17:30 <br>
+                        Maliny: středa 16:30 - 18:00 
+                    </p>
+                    <img class="meetings__image" src="/images/main/klubovna-maly.jpg" alt="klubovna">
+                </div>
+                <div class="column--half">
+                    <h3 class="meetings__title">Klubovna</h3>
+                    <p class="meetings__text">Naše klubovna je v domku u kostela sv. Jana Křtitele a sv. Prokopa na Pražském předměstí za obchodním domem Družba, ve Staroměstské ulici.</p>
+                    <iframe class="meetings__map" style="border:none" src="https://frame.mapy.cz/s/burelunema" width="200" height="200" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

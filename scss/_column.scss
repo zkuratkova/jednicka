@@ -1,0 +1,28 @@
+.column--half {
+    flex: 1 1 calc((100% - 60px) / 2);
+}
+
+.column--right {
+    order: 1;
+}
+
+.column--main {
+    @media screen and (min-width: 900px) {
+        width: 70vw;
+        padding-right: $pad;
+    } 
+}
+
+.column--sidebar {
+    @media screen and (min-width: 900px) {
+        width: 30vw;
+    } 
+}
+
+.column--news {
+    padding-left: $pad;
+    padding-right: $pad;
+    background-image: url(../images/svg/vzorek.svg);
+    background-size: 800px;
+    background-position: center;
+}

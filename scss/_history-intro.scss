@@ -1,0 +1,10 @@
+.history-intro {
+    &__title,
+    &__text {
+        @include text-middle;
+
+        @media screen and (min-width: 900px) {
+            text-align: left;
+        }
+    }
+}

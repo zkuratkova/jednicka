@@ -1,0 +1,70 @@
+
+.contact {
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.1);
+    padding: $pad / 2;
+    margin: $pad auto;
+    background-color: $secondary;
+    
+    @media screen and (min-width: 360px) {
+        width: 300px;
+        
+    }
+
+    &-patrol {
+        padding-bottom: $pad / 2;
+    }
+
+    &__patrol-name,
+    &__title,
+    &__name {
+        @include text-top;
+    }
+
+    &__mail {
+        @media screen and (max-width:300px) {
+            font-size: 13px;   
+        }
+        
+        @include text-middle;
+    }
+
+    &__image {
+        width: 75px;
+        height: 75px;
+        display: block;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto;
+    
+        @media screen and (min-width: 900px) {
+            width: 100px;
+            height: 100px;
+        }
+    
+        @media screen and (min-width: 1010px) {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+.contact-patrol--background {
+    background-image: url(../images/svg/vzorek.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

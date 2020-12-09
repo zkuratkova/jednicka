@@ -1,0 +1,65 @@
+
+.meetings {
+    margin-top: $pad;
+    margin-bottom: $pad;
+
+    @media screen and (min-width: 900px) {
+        border: 2px solid rgba(0, 83, 109, 0.2);
+    }
+
+
+
+    &__text {
+        padding: 0 $pad $pad;
+        margin: 0;
+        text-align: center;
+
+        @media screen and (min-width: 1100px) {
+            text-align: left;
+            padding: 0 $pad;
+              
+        }
+    }
+
+    &__title {
+        text-align: center;
+
+        @media screen and (min-width: 1100px) {
+            text-align: left;
+            padding: 0 $pad;
+        }
+    
+    }
+
+    &__map {
+        width: 200px;
+        margin: $pad;
+
+        @media screen and (min-width: 360px) {
+            width: 300px;
+        }
+
+        @media screen and (min-width: 1100px) {
+            width: 400px;
+            height: 300px;
+            
+        }
+
+
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: $pad / 2;
+
+        @media screen and (min-width: 640px) {
+            display: block;
+            max-width: 350px;
+            margin: $pad auto;
+        }
+
+        @media screen and (min-width: 1100px) {
+            margin: $pad;
+        }
+    }
+}

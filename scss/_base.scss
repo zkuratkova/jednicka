@@ -1,0 +1,37 @@
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.title {
+    text-align: center;
+    margin: $pad;
+}
+
+.title::before {
+    content: "";
+    display:inline-block;
+    height:30px;
+    width:30px;
+    background-size: 30px 30px;
+    background-image: url(..//images/svg/flower-nadpis-1.svg);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.title::after {
+    content: "";
+    display:inline-block;
+    height:30px;
+    width:30px;
+    background-size: 30px 30px;
+    background-image: url(..//images/svg/flower-nadpis-5.svg);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}

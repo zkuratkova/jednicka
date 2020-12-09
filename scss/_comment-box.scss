@@ -1,0 +1,54 @@
+
+
+#HCB_comment_box .btn, #HCB_comment_box input[type=submit].btn {
+    *padding-bottom: 2px;
+    *padding-top: 2px;
+}
+#HCB_comment_box .btn:first-child, #HCB_comment_box .btn-group:first-child {
+    *margin-left: 0;
+}
+#HCB_comment_box .uneditable-textarea, #HCB_comment_box input[type=button], #HCB_comment_box input[type=reset], #HCB_comment_box input[type=submit] {
+    height: auto;
+    width: auto;
+}
+#HCB_comment_box input, #HCB_comment_box input.btn, #HCB_comment_box select, #HCB_comment_box textarea {
+    font-family: 'Montserrat', sans-serif !important;
+}
+#HCB_comment_box label, #HCB_comment_box input, #HCB_comment_box input.btn, #HCB_comment_box select, #HCB_comment_box textarea {
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+}
+#HCB_comment_box input.submit {
+    -webkit-appearance: none;
+    margin: 0 7px 3px 0;
+    background-color:#ffffff;
+    border: 1px solid #00536D;
+    border-top: 1px solid #00536D;
+    border-left: 1px solid #00536D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    line-height: 130%;
+    text-decoration: none;
+    font-weight: 900;
+    color: #00536D;
+    cursor: pointer;
+    width: auto;
+    overflow: visible;
+    padding: 4px 10px 3px 7px;
+}
+#HCB_comment_box .help-inline, #HCB_comment_box .btn {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+}
+#HCB_comment_box .btn, #HCB_comment_box .btn-primary, #HCB_comment_box .btn-warning, #HCB_comment_box .btn-danger, #HCB_comment_box .btn-success, #HCB_comment_box .btn-info, #HCB_comment_box .btn-inverse {
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+    background-repeat: repeat-x;
+}
+#HCB_comment_box .btn {
+    border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+    border-color: #ccc;
+}

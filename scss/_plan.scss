@@ -1,0 +1,22 @@
+.plan {
+
+    &__text,
+    &__title {
+        @include text-top;
+        margin-left: $pad / 2;
+        margin-right: $pad / 2;
+
+        @media screen and (min-width: 1100px) {
+            margin: $pad;
+        }
+    }
+
+    &__list {
+        padding: $pad $pad * 2;
+
+        @media screen and (min-width: 1100px) {
+            padding: $pad $pad * 5;
+        }
+    }
+    
+}

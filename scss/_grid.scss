@@ -1,0 +1,18 @@
+.grid--third {
+    @media screen and (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: $pad;
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+.grid--half {
+    @media screen and (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        gap: $pad * 2;
+        justify-content: center;
+    }
+}

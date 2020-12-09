@@ -1,0 +1,25 @@
+{% include "partials/page-top.njk" %}
+
+    <div class="grid--layout">
+        <main class="main">
+            
+            {{ content | safe }}
+
+        </main>
+
+        <aside class="sidebar">
+            <h2 class="news__title">Aktuality</h2>
+
+            {% for aktualita in collections.aktuality | reverse %}
+
+            {% if loop.index <= 5 %}
+
+            <p class="news__text">{{ aktualita.templateContent | safe }}</p>
+
+            {% endif %}
+
+            {% endfor %}
+        </aside>
+    </div>
+
+{% include "partials/page-bottom.njk" %}

@@ -1,0 +1,69 @@
+
+.contact-leader {
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.1);
+    padding: $pad / 2;
+    margin: $pad auto;
+
+    @media screen and (min-width: 360px) {
+        width: 300px;
+    }
+    
+    @media screen and (min-width: 900px) {
+        flex: 0 0 350px;
+    }
+
+    &__name,
+    &__title {
+        @include text-top;
+    }
+
+    &__mail,
+    &__phone {
+        @include text-middle;
+    }
+
+    &__mail::before {
+        content: "";
+        display:inline-block;
+        height: 15px;
+        width: 15px;
+        background-size: 15px 15px;
+        background-image: url(..//images/svg/envelope.svg);
+        background-repeat: no-repeat;
+        margin-right: 7px;
+    }
+
+    &__phone::before {
+        content: "";
+        display:inline-block;
+        height: 15px;
+        width: 15px;
+        background-size: 15px 15px;
+        background-image: url(..//images/svg/phone.svg);
+        background-repeat: no-repeat;
+        margin-right: 7px;
+    }
+
+    
+
+    &__image {
+        display: block;
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto;
+
+        @media screen and (min-width: 900px) {
+            width: 100px;
+            height: 100px;
+        }
+
+        @media screen and (min-width: 1010px) {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

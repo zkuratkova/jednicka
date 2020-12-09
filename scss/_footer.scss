@@ -1,0 +1,59 @@
+.footer {
+    display: block;
+    background-color: #bebebe;
+    padding: $pad / 3;
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        padding: $pad / 3;
+        color: #070707;
+        border-radius: 5px;
+    
+        &:hover {
+            background-color: #5C5C5C;
+            color: $secondary;
+        }
+    }
+
+    &__icon::after {
+        content: "";
+        display:inline-block;
+        height: 15px;
+        width: 15px;
+        background-size: 15px 15px;
+        background-image: url(..//images/svg/angle-up.svg);
+        background-repeat: no-repeat;
+        margin-left: 3px;
+    }
+
+    &__text {
+        display: none;
+    
+        @media screen and (min-width: 360px) {
+            display: flex;
+         }
+    }
+
+
+}
+
+
+
+.junak__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: $pad / 3;
+    color: #070707;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #5C5C5C;
+        color: $secondary;
+    }
+}
+
+.junak {
+    display: flex;
+    align-items: center;
+}

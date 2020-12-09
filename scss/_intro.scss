@@ -1,0 +1,60 @@
+.intro__image {
+    width: 100%;
+    
+    
+}
+
+.intro__title {
+    text-align: center;
+    margin: $pad;
+}
+
+.intro__text {
+    padding: 0 $pad $pad;
+    margin: 0;
+    text-align: center;
+
+    @media screen and (min-width: 640px) {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1150px) {
+    .container--column-half {
+        display: flex;
+    }
+}
+
+.intro__text--flower-1::before {
+        content: "";
+        display:block;
+        height:30px;
+        width:30px;
+        background-size: 30px 30px;
+        background-image: url(..//images/svg/flower-nadpis-1.svg);
+        background-repeat: no-repeat;
+        margin: 5px auto;
+}
+
+.intro__text--flower-4::before {
+    content: "";
+    display:block;
+    height:30px;
+    width:30px;
+    background-size: 30px 30px;
+    background-image: url(..//images/svg/flower-nadpis-4.svg);
+    background-repeat: no-repeat;
+    margin: 5px auto;
+}
+
+.intro__text--flower-2::before {
+    content: "";
+    display:block;
+    height:30px;
+    width:30px;
+    background-size: 30px 30px;
+    background-image: url(..//images/svg/flower-nadpis-2.svg);
+    background-repeat: no-repeat;
+    margin: 5px auto;
+}
+

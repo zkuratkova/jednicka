@@ -1,0 +1,17 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin text-top {
+    text-align: center;
+    padding: $pad / 2;
+    margin: 0;
+}
+
+@mixin text-middle {
+    text-align: center;
+    padding-bottom: $pad / 2;
+    margin: 0;
+}

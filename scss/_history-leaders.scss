@@ -1,0 +1,24 @@
+.history-leaders {
+    padding: $pad / 2 $pad;
+
+    &__list {
+        @include reset-list;
+        text-align: center;
+
+        @media screen and (min-width: 900px) {
+            text-align: left;
+        }
+    }
+
+    &__list-item {
+        padding: $pad / 3;
+    }
+
+    &__title {
+        @include text-middle;
+
+        @media screen and (min-width: 900px) {
+            text-align: left;
+        }
+    }
+}
