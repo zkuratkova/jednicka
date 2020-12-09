@@ -338,7 +338,7 @@
   display: none;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 640px) {
   .footer__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -354,18 +354,21 @@
   border-radius: 5px;
 }
 
+.junak__link::before {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-size: 50px 50px;
+  background-image: url(..//images/svg/SKAUT_logo_cerne.svg);
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
 .junak__link:hover {
   background-color: #5C5C5C;
   color: #ffffff;
-}
-
-.junak {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .contact {
@@ -1227,15 +1230,29 @@
 }
 
 .container--footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
+}
+
+@media screen and (max-width: 640px) {
+  .container--footer {
+    text-align: center;
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .container--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .column--half {
@@ -1350,6 +1367,12 @@ h2 {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 320px) {
+  .title::before {
+    display: none;
+  }
+}
+
 .title::after {
   content: "";
   display: inline-block;
@@ -1359,6 +1382,12 @@ h2 {
   background-image: url(..//images/svg/flower-nadpis-5.svg);
   background-repeat: no-repeat;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  .title::after {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 640px) {

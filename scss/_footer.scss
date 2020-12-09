@@ -30,12 +30,10 @@
     &__text {
         display: none;
     
-        @media screen and (min-width: 360px) {
+        @media screen and (min-width: 640px) {
             display: flex;
          }
     }
-
-
 }
 
 
@@ -47,13 +45,20 @@
     color: #070707;
     border-radius: 5px;
 
+    &::before {
+        content: "";
+        display:inline-block;
+        height:50px;
+        width:50px;
+        background-size: 50px 50px;
+        background-image: url(..//images/svg/SKAUT_logo_cerne.svg);
+        background-repeat: no-repeat;
+        transform: translateY(10px);
+       
+    }
+
     &:hover {
         background-color: #5C5C5C;
         color: $secondary;
     }
-}
-
-.junak {
-    display: flex;
-    align-items: center;
 }
